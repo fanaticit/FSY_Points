@@ -1,0 +1,59 @@
+:root {
+  --text: #1f2937;
+  --bg: #e6f2f7;
+  --header-bg: #0a4b75;
+  --header-text: #ffffff;
+  --accent: #fabd41;
+  --positive: #98c973;
+  --negative: #ef4444;
+  --card-bg: #ffffff;
+  --border: #d1d5db;
+}
+
+html, body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+/* Responsive tweaks */
+main {
+  padding: 1rem !important;
+}
+
+@media (min-width: 768px) {
+  main {
+    padding: 2rem !important;
+  }
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+  background: var(--card-bg);
+  /* Smooth scrolling on iOS */
+  -webkit-overflow-scrolling: touch;
+}
+
+table th, table td {
+  padding: 0.6rem 0.4rem !important;
+}
+
+@media (min-width: 768px) {
+  table th, table td {
+    padding: 1rem 0.8rem !important;
+  }
+}
